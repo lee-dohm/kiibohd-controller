@@ -31,10 +31,9 @@ DefaultMap="Dvorak lcdFuncMap"
 # e.g.  PartialMaps[1]="layer1 layer1mod"
 #       PartialMaps[2]="layer2"
 #       PartialMaps[3]="layer3"
-PartialMaps[1]="ArrowsAndMedia Lock3 lcdFuncMap"
+PartialMaps[1]="Arrows Lock3 lcdFuncMap"
 PartialMaps[2]="NumericKeypad FlashMode"
 PartialMaps[3]="Qwerty"
-
 
 
 ##########################
@@ -56,7 +55,6 @@ Chip="mk20dx256vlh7"
 
 # Compiler Selection
 Compiler="gcc"
-
 
 
 ########################

@@ -1,4 +1,4 @@
-Name = "ArrowsAndMedia";
+Name = "Arrows";
 Layout = "Blank";
 Base = "Blank";
 Version = "0.1";
@@ -10,13 +10,8 @@ U"E" : U"Up";
 U"F" : U"Right";
 U"D" : U"Down";
 U"S" : U"Left";
-U"8" : CONS"SCANPREVIOUSTRACK";
-U"9" : CONS"PAUSEPLAY";
-U"0" : CONS"SCANNEXTTRACK";
-U"Minus" : CONS"VOLUMEUP";
+
 U"I" : U"Up";
-U"Right Brace" : CONS"VOLUMEDOWN";
 U"J" : U"Left";
 U"K" : U"Down";
 U"L" : U"Right";
-U"Quote" : CONS"MUTE";
