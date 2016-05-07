@@ -1,0 +1,9 @@
+Name = "FlashMode";
+Layout = "Blank";
+Base = "Blank";
+Version = "0.1";
+Author = "lee-dohm (Lee Dohm)";
+KLL = "0.3c";
+Date = "2016-05-07";
+
+U"Equals" : flashMode();

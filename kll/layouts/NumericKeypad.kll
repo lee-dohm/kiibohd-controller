@@ -1,0 +1,27 @@
+Name = "NumericKeypad";
+Layout = "Blank";
+Base = "Blank";
+Version = "0.1";
+Author = "lee-dohm (Lee Dohm)";
+KLL = "0.3c";
+Date = "2016-05-07";
+
+U"8" : U"P/";
+U"9" : U"P*";
+U"0" : U"P-";
+U"U" : U"P7";
+U"I" : U"P8";
+U"O" : U"P9";
+U"P" : U"P+";
+U"J" : U"P4";
+U"K" : U"P5";
+U"L" : U"P6";
+U"Semicolon" : U"P+";
+U"M" : U"P1";
+U"Comma" : U"P2";
+U"Period" : U"P3";
+U"Slash" : U"PENTER";
+U"Left" : U"P0";
+U"Down" : U"P0";
+U"Up" : U"P.";
+U"Right" : U"PENTER";
