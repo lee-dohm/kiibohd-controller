@@ -57,3 +57,5 @@ CMakeFiles
 CMakeCache.txt
 cmake_install.cmake
 compile_commands.json
+Keyboards/ICED-L/
+Keyboards/ICED-R/
