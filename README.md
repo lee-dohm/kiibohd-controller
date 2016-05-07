@@ -11,6 +11,12 @@ This project uses the [GitHub scripts-to-rule-them-all pattern](https://github.c
 * Run `script/flash` to flash the firmware onto the keyboard
 * Run `script/clean` to clean build artifacts in preparation for a clean build
 
+## Notes
+
+### Scripts in `Keyboards`
+
+* Any layer that needs to have keys for shifting, locking or latching layers **must** have `lcdFuncMap` as its final entry
+
 ## Licensing
 
 Licensing is done on a per-file basis. Some of the source code is from [PJRC/Teensy](http://pjrc.com), other source code is from the [McHck Project](https://mchck.org). Code written specifically for the Kiibohd Controller use the following licenses:
