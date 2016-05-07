@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# script/flash: Flash the firmware onto the keyboard.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo "Pausing for five seconds to allow you to put the keyboard into flashing mode"
+sleep 5
+
+dfu-util -D Keyboards/ICED-R/kiibohd.dfu.bin

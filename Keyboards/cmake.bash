@@ -8,15 +8,15 @@
 VariablesList=(BuildPath BaseMap ScanModule MacroModule OutputModule DebugModule Chip Compiler)
 ExitEarly=false
 for var in ${VariablesList[@]}; do
-	if [ -z ${!var+x} ]; then
-		echo "ERROR: Unset variable => '${var}'"
-		ExitEarly=true
-	fi
+  if [ -z ${!var+x} ]; then
+    echo "ERROR: Unset variable => '${var}'"
+    ExitEarly=true
+  fi
 done
 
 # Error was detected, exit immediately
 if $ExitEarly; then
-	exit 1
+  exit 1
 fi
 
 
@@ -24,8 +24,8 @@ fi
 PartialMapsExpanded="${PartialMaps[1]}"
 count=2 # Start the loop at index 2
 while [ "$count" -le "${#PartialMaps[@]}" ]; do
-	PartialMapsExpanded="${PartialMapsExpanded};${PartialMaps[count]}"
-	count=$(($count+1))
+  PartialMapsExpanded="${PartialMapsExpanded};${PartialMaps[count]}"
+  count=$(($count+1))
 done
 
 
@@ -36,44 +36,44 @@ PROG_NAME=$(basename $0)
 
 # Process the command line arguments (if any)
 while (( "$#" >= "1" )); do
-	# Scan each argument
-	key="$1"
-	case $key in
-	-c|--cmakelists-path)
-		CMakeListsPath="$2"
-		shift
-		;;
-	-f|--force-rebuild)
-		# Remove the old directory first
-		rm -rf "${BuildPath}"
-		;;
-	-o|--output-path)
-		BuildPath="$2"
-		shift
-		;;
-	-h|--help)
-		echo "Usage: $PROG_NAME [options...]"
-		echo ""
-		echo "Convenience script to build the source of a given keyboard."
-		echo "Edit '$PROG_NAME' to configure the keyboard options such as KLL layouts."
-		echo ""
-		echo "Arguments:"
-		echo " -c, --cmakelists-path PATH    Set the path of CMakeLists.txt"
-		echo "                               Default: ${CMakeListsPath}"
-		echo " -f, --force-rebuild           Deletes the old build directory and rebuilds from scratch."
-		echo " -o, --output-path PATH        Set the path of the build files."
-		echo "                               Default: ${BuildPath}"
-		echo " -h, --help                    This message."
-		exit 1
-		;;
-	*)
-		echo "INVALID ARG: '$1'"
-		exit 2
-		;;
-	esac
+  # Scan each argument
+  key="$1"
+  case $key in
+  -c|--cmakelists-path)
+    CMakeListsPath="$2"
+    shift
+    ;;
+  -f|--force-rebuild)
+    # Remove the old directory first
+    rm -rf "${BuildPath}"
+    ;;
+  -o|--output-path)
+    BuildPath="$2"
+    shift
+    ;;
+  -h|--help)
+    echo "Usage: $PROG_NAME [options...]"
+    echo ""
+    echo "Convenience script to build the source of a given keyboard."
+    echo "Edit '$PROG_NAME' to configure the keyboard options such as KLL layouts."
+    echo ""
+    echo "Arguments:"
+    echo " -c, --cmakelists-path PATH    Set the path of CMakeLists.txt"
+    echo "                               Default: ${CMakeListsPath}"
+    echo " -f, --force-rebuild           Deletes the old build directory and rebuilds from scratch."
+    echo " -o, --output-path PATH        Set the path of the build files."
+    echo "                               Default: ${BuildPath}"
+    echo " -h, --help                    This message."
+    exit 1
+    ;;
+  *)
+    echo "INVALID ARG: '$1'"
+    exit 2
+    ;;
+  esac
 
-	# Shift to the next argument
-	shift
+  # Shift to the next argument
+  shift
 done
 
 
@@ -97,4 +97,3 @@ fi
 
 echo "Firmware has been compiled into: '${BuildPath}'"
 cd -
-

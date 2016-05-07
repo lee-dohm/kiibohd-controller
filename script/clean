@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# script/clean: Delete the build artifacts.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+rm -rf Keyboards/ICED-L
+rm -rf Keyboards/ICED-R

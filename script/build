@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# script/build: Build the keyboard firmware.
+
+set -e
+
+cd "$(dirname "$0")/../Keyboards"
+
+./ergodox.bash
+
+cd ..
