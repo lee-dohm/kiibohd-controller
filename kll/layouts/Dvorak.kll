@@ -6,31 +6,80 @@ Author = "lee-dohm (Lee Dohm)";
 KLL = "0.3c";
 Date = "2016-05-07";
 
+# Keys are described:
+#
+# * Left to Right
+# * Top to Bottom
+#
+# Except where otherwise specified.
+#
+# This keymap includes mappings for all keys so that I don't have to go digging
+# around for `defaultMap` to find the original names for keys.
+
+## Left Hand
+
+### Top Row
 U"Equals" : U"Esc";
-U"Function1" : U"Left Brace";
-U"T" : U"Y";
-U"R" : U"P";
-U"E" : U"Period";
-U"W" : U"Comma";
-U"Q" : U"Quote";
+U"1" : U"1";
+U"2" : U"2";
+U"3" : U"3";
+U"4" : U"4";
+U"5" : U"5";
+U"Esc" : U"Esc";
+
+### Second Row - Includes top rightmost long key
 U"Backslash" : U"Backtick";
-U"G" : U"I";
-U"F" : U"U";
-U"D" : U"E";
+U"Q" : U"Quote";
+U"W" : U"Comma";
+U"E" : U"Period";
+U"R" : U"P";
+U"T" : U"Y";
+U"Function1" : U"Left Brace";
+
+### Third Row - Does not include rightmost keys
+U"Tab" : U"Tab";
+U"A" : U"A";
 U"S" : U"O";
-U"Function2" : U"Function1";
-U"B" : U"X";
-U"V" : U"K";
-U"C" : U"J";
-U"X" : U"Q";
+U"D" : U"E";
+U"F" : U"U";
+U"G" : U"I";
+
+### Fourth Row - Includes bottom rightmost long key
+U"Left Shift" : U"Left Shift";
 U"Z" : U"Semicolon";
-U"Function5" : U"LGui";
-U"Function4" : U"LAlt";
-U"Function3" : U"LCtrl";
-U"Backtick" : U"Backslash";
+U"X" : U"Q";
+U"C" : U"J";
+U"V" : U"K";
+U"B" : U"X";
+U"Function2" : U"Function1";
+
+### Fifth Row
 U"LGui" : U"Backslash";
+U"Backtick" : U"Backslash";
+U"Function3" : U"LCtrl";
+U"Function4" : U"LAlt";
+U"Function5" : U"LGui";
+
+### Thumb Cluster
+U"LCtrl" : U"LCtrl";
+U"LAlt" : U"LAlt";
+U"Backspace" : U"Backspace";
+U"Delete" : U"Delete";
+U"Home" : U"Home";
+U"End" : U"End";
+
+## Right Hand
+
+### Top Row
 U"Function6" : U"Lock2";
+U"6" : U"6";
+U"7" : U"7";
+U"8" : U"8";
+U"9" : U"9";
+U"0" : U"0";
 U"Minus" : U"Equal";
+
+### Second Row - Includes top leftmost long key
 U"Left Brace" : U"Right Brace";
 U"Y" : U"F";
 U"U" : U"G";
@@ -38,19 +87,35 @@ U"I" : U"C";
 U"O" : U"R";
 U"P" : U"L";
 U"Right Brace" : U"Slash";
+
+### Third Row - Does not include leftmost keys
 U"H" : U"D";
 U"J" : U"H";
 U"K" : U"T";
 U"L" : U"N";
 U"Semicolon" : U"S";
 U"Quote" : U"Minus";
-U"RAlt" : CONS"VOLUMEUP";
-U"RCtrl" : CONS"PAUSEPLAY";
+
+### Fourth Row - Includes bottom leftmost long key
 U"Function7" : U"Function1";
 U"N" : U"B";
+U"M" : U"M";
 U"Comma" : U"W";
 U"Period" : U"V";
 U"Slash" : U"Z";
-U"PageUp" : CONS"VOLUMEDOWN";
-U"PageDown" : CONS"MUTE";
+U"Right Shift" : U"Right Shift";
+
+### Fifth Row
+U"Left" : U"Left";
+U"Down" : U"Down";
+U"Up" : U"Up";
+U"Right" : U"Right";
 U"RGui" : U"Backslash";
+
+### Thumb Cluster
+U"RAlt" : CONS"VOLUMEUP";
+U"RCtrl" : CONS"PAUSEPLAY";
+U"PageUp" : CONS"VOLUMEDOWN";
+U"Enter" : U"Enter";
+U"Space" : U"Space";
+U"PageDown" : CONS"MUTE";
